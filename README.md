@@ -33,8 +33,6 @@ Additionally an l.e.d. can be blinked when the utf-8 string 'blink' is sent to t
 
 This file defines the BLEEnvironment class that runs the application
 
----
-
 ```python
 import bluetooth
 import random
