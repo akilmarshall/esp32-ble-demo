@@ -7,10 +7,27 @@ This project is written in micropython.
 The environment is sampled using a bme280 or bmp280 sensor and served via a GATT server.
 Additionally an l.e.d. can be blinked when the utf-8 string 'blink' is sent to the GATT server via the string characteristic.
 
+
+<!-- vim-markdown-toc GFM -->
+
+* [parts](#parts)
+* [ble_environment.py](#ble_environmentpy)
+    * [BLEEnvironment class](#bleenvironment-class)
+        * [\_\_init\_\_](#__init_)
+        * [_irq](#irq)
+        * [set_environment_data](#set_environment_data)
+        * [read_act](#read_act)
+        * [_advertise](#advertise)
+* [bme280_float.py](#bme280_floatpy)
+* [gpio.py](#gpiopy)
+* [ble_advertising.py](#ble_advertisingpy)
+
+<!-- vim-markdown-toc -->
 ## parts
 
 - ESP32-WROOM-32 microcontroller
 - bmp280 environmental sensor (temperature, pressure)
+- led
 
 ## ble_environment.py
 
